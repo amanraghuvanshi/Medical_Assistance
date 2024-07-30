@@ -20,3 +20,12 @@ st.subheader("Welcome to the new revolutionizing solution to Life🏥")
 uploaded_file = st.file_uploader("Upload an image", type=["jpg", "jpeg", "png"])
 
 submit = st.button("Generate Report 📄")
+
+if submit:
+    if uploaded_file is not None:
+        st.image(uploaded_file, caption="Uploaded Image", use_column_width=True)
+        st.write("")
+        st.write("Classifying the image...")
+
+        # Load the model
+        model = genai.load_model
