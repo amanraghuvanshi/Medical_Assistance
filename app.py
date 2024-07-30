@@ -9,6 +9,5 @@ st.set_page_config(
     page_title="Life Medical AI Assistant", page_icon=":robot", layout="centered", initial_sidebar_state="expanded"
 )
 
-# setting up the logo
-logo_path = pathlib.Path(__file__).parent
+logo_path = pathlib.Path("assets/logo.png")
 st.image(logo_path, use_column_width=True)
